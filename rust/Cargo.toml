@@ -1,0 +1,17 @@
+
+```toml
+[package]
+name = "pricing"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+rand = "0.8"
+tokio = { version = "1", features = ["full"] }
+
+[[bin]]
+name = "risk_monitor"
+path = "src/bin/risk_monitor.rs"
